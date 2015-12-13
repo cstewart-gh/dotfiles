@@ -22,4 +22,4 @@
 [mergetool]
 	tool = bc
 [push]
-	default = simple	
+	default = simple
