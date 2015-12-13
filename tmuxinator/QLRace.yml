@@ -1,0 +1,13 @@
+# ~/.tmuxinator/QLRace.yml
+
+name: QLRace
+root: ~/Code/rails/QLRace
+
+windows:
+  - general:
+      layout: main-vertical
+      panes:
+        - atom .
+        - guard
+  - server: rails s
+  - logs: tail -f log/development.log

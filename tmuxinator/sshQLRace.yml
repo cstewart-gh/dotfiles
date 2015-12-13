@@ -1,0 +1,14 @@
+# ~/.tmuxinator/sshQLRace.yml
+
+name: sshQLRace
+root: ~/
+tmux_options: -2
+
+windows:
+  - QLRace Servers:
+      layout: 1da1,150x35,0,0{73x35,0,0,0,76x35,74,0[76x17,74,0,1,76x17,74,18,2]}
+      panes:
+        - tmux setw synchronize-panes on &&
+          ssh de.qlrace.com
+        - ssh il.qlrace.com
+        - ssh au.qlrace.com
