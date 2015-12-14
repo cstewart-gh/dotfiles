@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="allow_bold" mtime="1450055259" type="bool" value="true"/>
+	<entry name="color" mtime="1438975327" type="string">
+		<stringvalue>#d47ad47ad47a</stringvalue>
+	</entry>
+	<entry name="style" mtime="1450010526" type="string">
+		<stringvalue>Office Code Pro 11</stringvalue>
+	</entry>
+	<entry name="palette_name" mtime="1450055320" type="string">
+		<stringvalue>Custom</stringvalue>
+	</entry>
+	<entry name="palette" mtime="1450055320" type="string">
+		<stringvalue>#000000000000:#e8e834341c1c:#6868c2c25656:#f2f2d3d32c2c:#1c1c9898e8e8:#8e8e6969c9c9:#1c1c9898e8e8:#babababababa:#000000000000:#dfdf5a5a4f4f:#7676b7b76868:#eeeed6d64a4a:#38387b7bd2d2:#95957b7bbdbd:#3d3d9696e2e2:#babababababa:#babababababa:#222223232424</stringvalue>
+	</entry>
+</gconf>
