@@ -56,7 +56,7 @@ eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 eval "$(rbenv init -)"
 
-alias reflector-get-mirrors="sudo reflector --verbose -l 50 -p http --sort rate --save /etc/pacman.d/mirrorlist"
+alias reflector-get-mirrors="sudo reflector --verbose -l 100 -p http --sort rate --save /etc/pacman.d/mirrorlist"
 
 # Tmux aliases
 alias mux='tmuxinator'

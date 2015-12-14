@@ -2,6 +2,7 @@
 
 name: QLRace
 root: ~/Code/rails/QLRace
+tmux_options: -2
 
 windows:
   - general:
