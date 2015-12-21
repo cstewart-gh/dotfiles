@@ -1,16 +1,13 @@
 <?xml version="1.0"?>
 <gconf>
-	<entry name="allow_bold" mtime="1450055259" type="bool" value="true"/>
-	<entry name="color" mtime="1438975327" type="string">
-		<stringvalue>#d47ad47ad47a</stringvalue>
+	<entry name="style" mtime="1450698393" type="string">
+		<stringvalue>Ubuntu Mono 12</stringvalue>
 	</entry>
-	<entry name="style" mtime="1450010526" type="string">
-		<stringvalue>Office Code Pro 11</stringvalue>
+	<entry name="palette_name" mtime="1450698407" type="string">
+		<stringvalue>Bluloco</stringvalue>
 	</entry>
-	<entry name="palette_name" mtime="1450055320" type="string">
-		<stringvalue>Custom</stringvalue>
+	<entry name="palette" mtime="1450698407" type="string">
+		<stringvalue>#181818181818:#FFFF2E2E3F3F:#6F6FD7D75D5D:#FFFF6F6F2323:#23235151D9D9:#98986161F8F8:#0000CDCDB3B3:#FFFFFCFCC2C2:#555557575353:#FFFF64648080:#3F3FC5C56B6B:#F9F9C8C85959:#0000B1B1FEFE:#B6B68D8DFFFF:#B3B38B8B7D7D:#FFFFFEFEE3E3:#DEDEE0E0DFDF:#1E1E1E1E1E1E</stringvalue>
 	</entry>
-	<entry name="palette" mtime="1450055320" type="string">
-		<stringvalue>#000000000000:#e8e834341c1c:#6868c2c25656:#f2f2d3d32c2c:#1c1c9898e8e8:#8e8e6969c9c9:#1c1c9898e8e8:#babababababa:#000000000000:#dfdf5a5a4f4f:#7676b7b76868:#eeeed6d64a4a:#38387b7bd2d2:#95957b7bbdbd:#3d3d9696e2e2:#babababababa:#babababababa:#222223232424</stringvalue>
-	</entry>
+	<entry name="allow_bold" mtime="1450698355" type="bool" value="true"/>
 </gconf>
