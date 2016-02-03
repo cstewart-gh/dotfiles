@@ -1,1 +1,1 @@
-Managed using https://github.com/thoughtbot/rcm
+Managed using [rcm](https://github.com/thoughtbot/rcm)
