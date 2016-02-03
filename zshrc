@@ -41,7 +41,7 @@ DISABLE_CORRECTION="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git git-extras textmate ruby lighthouse)
 # plugins=(sudo archlinux web-search git bundler gem rails)
-plugins=(sudo archlinux systemd web-search git git-extras httpie python pyenv pip bundler gem rails tmuxinator)
+plugins=(sudo archlinux systemd web-search git git-extras httpie python pyenv pip bundler gem rails tmuxinator sprunge)
 source $ZSH/oh-my-zsh.sh
 
 export EDITOR=ne
