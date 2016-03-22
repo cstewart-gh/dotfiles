@@ -7,8 +7,12 @@
 # git untracked files modification from Brian Carper:
 # http://briancarper.net/blog/570/git-info-in-your-zsh-prompt
 
-function virtualenv_info {
-    [ $VIRTUAL_ENV ] && echo '('`basename $VIRTUAL_ENV`')'
+function pyenv_info {
+    pyenv_local=`pyenv local`
+
+    if [[ $pyenv_local != "pyenv: no local version configured for this directory" ]]; then
+        echo "($pyenv_local)"
+    fi
 }
 
 PR_GIT_UPDATE=1
@@ -94,4 +98,4 @@ function steeef_precmd {
 }
 add-zsh-hook precmd steeef_precmd
 
-PROMPT=$'%{$purple%}%n$PR_RST@%{$purple%}%M %{$limegreen%}%2~$PR_RST$(virtualenv_info)$vcs_info_msg_0_%{$orange%} λ$PR_RST '
+PROMPT=$'%{$purple%}%n$PR_RST@%{$purple%}%M %{$limegreen%}%2~$PR_RST$(pyenv_info)$vcs_info_msg_0_%{$orange%} λ$PR_RST '
