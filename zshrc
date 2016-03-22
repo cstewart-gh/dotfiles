@@ -19,14 +19,14 @@ if ! zgen saved; then
     zgen oh-my-zsh plugins/rbenv
     zgen oh-my-zsh plugins/bundler
     zgen oh-my-zsh plugins/gem
-    zgen oh-my-zsh plugins/rails  # compdef: unknown command or service: rails
+    zgen oh-my-zsh plugins/rails
     zgen oh-my-zsh plugins/tmuxinator
     zgen oh-my-zsh plugins/sprunge
     zgen oh-my-zsh plugins/web-search
     zgen save
 
     # completions
-    # zgen load zsh-users/zsh-completions src # compdef: unknown command or service: rails
+    zgen load zsh-users/zsh-completions src
 
     # theme
     zgen load cstewart90/dotfiles oh-my-zsh/custom/themes/kanzo2
