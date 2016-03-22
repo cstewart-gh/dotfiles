@@ -45,15 +45,8 @@ plugins=(sudo archlinux systemd web-search git git-extras httpie python pyenv pi
 source $ZSH/oh-my-zsh.sh
 
 export EDITOR=ne
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-export PATH="$HOME/.rbenv/bin:$PATH"
 export GOPATH="$HOME/Code/go"
 export PATH="$GOPATH/bin:$PATH"
-
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
-eval "$(rbenv init -)"
 
 # Tmux aliases
 alias mux='tmuxinator'
