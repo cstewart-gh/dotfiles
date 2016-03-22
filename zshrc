@@ -38,6 +38,7 @@ fi
 export EDITOR=ne
 export GOPATH="$HOME/Code/go"
 export PATH="$GOPATH/bin:$PATH"
+export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 
 # Tmux aliases
 alias tmux='tmux -2'
