@@ -19,7 +19,7 @@ if ! zgen saved; then
     zgen oh-my-zsh plugins/rbenv
     zgen oh-my-zsh plugins/bundler
     zgen oh-my-zsh plugins/gem
-    zgen load cstewart90/dotfiles oh-my-zsh/custom/plugin/rails
+    zgen load cstewart90/dotfiles oh-my-zsh/custom/plugins/rails
     zgen oh-my-zsh plugins/tmuxinator
     zgen oh-my-zsh plugins/sprunge
     zgen oh-my-zsh plugins/web-search
