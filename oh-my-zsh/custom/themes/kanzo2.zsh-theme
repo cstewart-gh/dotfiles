@@ -8,7 +8,7 @@
 # http://briancarper.net/blog/570/git-info-in-your-zsh-prompt
 
 function virtualenv_info {
-    [ $VIRTUAL_ENV ] && echo '('`basename $VIRTUAL_ENV`')'
+    [ $VIRTUAL_ENV ] && echo "(`basename $VIRTUAL_ENV`)"
 }
 
 PR_GIT_UPDATE=1
