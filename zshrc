@@ -2,7 +2,7 @@ lazy_source () {
     eval "$1 () { [ -f $2 ] && source $2 && $1 \$@ }"
 }
 
-# lasy load zgen
+# lazy load zgen
 lazy_source zgen ${HOME}/.zgen/zgen.zsh
 
 # check if there's no init script
