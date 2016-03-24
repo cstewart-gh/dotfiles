@@ -6,7 +6,7 @@ lazy_source () {
 lazy_source zgen ${HOME}/.zgen/zgen.zsh
 
 # check if there's no init script
-if ! source "$HOME/.zgen/init.zsh"; then
+if ! zgen saved; then
     # load oh-my-zsh
     zgen oh-my-zsh
 
