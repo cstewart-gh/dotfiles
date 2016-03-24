@@ -27,7 +27,6 @@ if ! zgen saved; then
     zgen oh-my-zsh plugins/tmuxinator
     zgen oh-my-zsh plugins/sprunge
     zgen oh-my-zsh plugins/web-search
-    zgen save
 
     # completions
     zgen load zsh-users/zsh-completions src
