@@ -1,4 +1,4 @@
-# check if there's no init script
+# don't source zgen unless we have to.
 if ! source "$HOME/.zgen/init.zsh"; then
     source "${HOME}/.zgen/zgen.zsh"
 
