@@ -1,12 +1,7 @@
-lazy_source () {
-    eval "$1 () { [ -f $2 ] && source $2 && $1 \$@ }"
-}
-
-# lazy load zgen
-lazy_source zgen ${HOME}/.zgen/zgen.zsh
-
 # check if there's no init script
-if ! zgen saved; then
+if ! source "$HOME/.zgen/init.zsh"; then
+    source "${HOME}/.zgen/zgen.zsh"
+
     # load oh-my-zsh
     zgen oh-my-zsh
 
@@ -36,6 +31,7 @@ if ! zgen saved; then
 
     # save all to init script
     zgen save
+    zgen init
 fi
 
 export EDITOR=ne
