@@ -1,7 +1,8 @@
-# don't source zgen unless we have to.
-if ! source "$HOME/.zgen/init.zsh"; then
-    source "${HOME}/.zgen/zgen.zsh"
+# load zgen
+source "${HOME}/.zgen/zgen.zsh"
 
+# if the init scipt doesn't exist
+if ! zgen saved; then
     # load oh-my-zsh
     zgen oh-my-zsh
 
@@ -10,6 +11,7 @@ if ! source "$HOME/.zgen/init.zsh"; then
     zgen oh-my-zsh plugins/systemd
     zgen oh-my-zsh plugins/sudo
     zgen oh-my-zsh plugins/git
+    zgen oh-my-zsh plugins/gitfast
     zgen oh-my-zsh plugins/git-extras
     zgen oh-my-zsh plugins/httpie
     zgen oh-my-zsh plugins/pip
@@ -31,7 +33,6 @@ if ! source "$HOME/.zgen/init.zsh"; then
 
     # save all to init script
     zgen save
-    zgen init
 fi
 
 export EDITOR=ne
