@@ -40,6 +40,7 @@ export PATH="$GOPATH/bin:$PATH"
 export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 
 # Tmux aliases
+alias mux='tmuxinator'
 alias tmux='tmux -2'
 alias ta='tmux attach -t'
 alias tnew='tmux new -s'
