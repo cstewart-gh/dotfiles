@@ -3,15 +3,24 @@
 	email = cstewart90@users.noreply.github.com
 [alias]
 	a = add
-	c = commit
-	co = checkout
-	st = status
 	br = branch
+	c = commit
+	cl = clone
+	co = checkout
+	cp = cherry-pick
+	dc = diff --cached
 	dt = difftool
-	mt = mergetool
-	hist = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %C(dim white)%s %C(green)(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
-	type = cat-file -t
 	dump = cat-file -p
+	hist = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %Cblue<%an>%Creset' --abbrev-commit --date=relative --all
+	last = log -1 --stat
+	mt = mergetool
+	p = push
+	pl = pull
+	st = status -sb
+	type = cat-file -t
+	unstage = reset HEAD --
+[color]
+	ui = true
 [diff]
 	tool = bc
 [difftool]
@@ -21,5 +30,8 @@
 	tool = bc
 [mergetool]
 	tool = bc
+	keeptemporaries = false
+	keepbackups = false
+	prompt = false
 [push]
 	default = simple
