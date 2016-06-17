@@ -19,8 +19,6 @@
 	st = status -sb
 	type = cat-file -t
 	unstage = reset HEAD --
-[core]
-	eol = lf
 [diff]
 	tool = bc
 [difftool]
