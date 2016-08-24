@@ -1,0 +1,15 @@
+[roxterm profile]
+font=Ubuntu Mono 12
+width=120
+height=50
+hide_menubar=1
+cursor_shape=1
+term=xterm-256color
+browser=chromium
+scroll_on_keystroke=0
+disable_tab_menu_shortcuts=1
+disable_menu_shortcuts=1
+middle_click_tab=0
+tab_pos=0
+show_tab_num=1
+maximise=1
