@@ -29,4 +29,9 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
  unset f
 fi
 
+# Start gnome-keyring
+# https://wiki.archlinux.org/index.php/GNOME/Keyring#xinitrc_method
+eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
+export SSH_AUTH_SOCK
+
 exec startxfce4
