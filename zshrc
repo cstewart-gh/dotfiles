@@ -11,7 +11,8 @@ if ! zgen saved; then
     zgen oh-my-zsh plugins/systemd
     zgen oh-my-zsh plugins/sudo
     zgen oh-my-zsh plugins/git
-    zgen oh-my-zsh plugins/git-extras
+    #zgen oh-my-zsh plugins/git-extras
+    zgen load tj/git-extras etc/git-extras-completion.zsh
     zgen oh-my-zsh plugins/httpie
     zgen oh-my-zsh plugins/pip
     zgen oh-my-zsh plugins/pyenv
