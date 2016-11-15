@@ -49,7 +49,7 @@ alias tnew='tmux new -s'
 alias tls='tmux ls'
 alias tkill='tmux kill-session -t'
 
-alias reflector-get-mirrors="sudo reflector --verbose -l 50 -p http --sort rate --save /etc/pacman.d/mirrorlist"
+alias reflector-get-mirrors="sudo reflector --verbose -l 50 -p https --sort rate --save /etc/pacman.d/mirrorlist"
 
 # https://wiki.archlinux.org/index.php/Steam/Troubleshooting#Deleting_the_runtime_libraries
 alias fix-steam='find ~/.steam/root/ \( -name "libgcc_s.so*" -o -name "libstdc++.so*" -o -name "libxcb.so*" -o -name "libgpg-error.so*" \) -print -delete'
