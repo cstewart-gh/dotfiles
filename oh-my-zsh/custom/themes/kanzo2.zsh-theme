@@ -47,11 +47,10 @@ zstyle ':vcs_info:*:prompt:*' check-for-changes true
 # %a - action (e.g. rebase-i)
 # %R - repository path
 # %S - path in the repository
-PR_RST="%{$reset_color%}"
-FMT_BRANCH=" %{$turquoise%}%b%u%c${PR_RST}"
-FMT_ACTION=" performing %{$limegreen%}%a${PR_RST}"
-FMT_UNSTAGED="%{$orange%}●"
-FMT_STAGED="%{$limegreen%}●"
+FMT_BRANCH=" %{$turquoise%}%b%u%c%f"
+FMT_ACTION=" performing %{$limegreen%}%a%f"
+FMT_UNSTAGED="%{$orange%}●%f"
+FMT_STAGED="%{$limegreen%}●%f"
 
 zstyle ':vcs_info:*:prompt:*' unstagedstr   "${FMT_UNSTAGED}"
 zstyle ':vcs_info:*:prompt:*' stagedstr     "${FMT_STAGED}"
@@ -81,9 +80,9 @@ function steeef_precmd {
         # check for untracked files or updated submodules, since vcs_info doesn't
         if [[ ! -z $(git ls-files --other --exclude-standard 2> /dev/null) ]]; then
             PR_GIT_UPDATE=1
-            FMT_BRANCH="${PR_RST} %{$turquoise%}%b%u%c%{$hotpink%}●${PR_RST}"
+            FMT_BRANCH=" %{$turquoise%}%b%u%c%f%{$hotpink%}●%f"
         else
-            FMT_BRANCH="${PR_RST} %{$turquoise%}%b%u%c${PR_RST}"
+            FMT_BRANCH=" %{$turquoise%}%b%u%c%f"
         fi
         zstyle ':vcs_info:*:prompt:*' formats "${FMT_BRANCH}"
 
@@ -93,4 +92,4 @@ function steeef_precmd {
 }
 add-zsh-hook precmd steeef_precmd
 
-PROMPT='%{$purple%}%n$PR_RST@%{$purple%}%M %{$limegreen%}%2~$PR_RST$(virtualenv_info)$vcs_info_msg_0_ %{$orange%}λ $PR_RST'
+PROMPT='%{$purple%}%n%f@%{$purple%}%M%f %{$limegreen%}%2~$f$(virtualenv_info)$vcs_info_msg_0_ %{$orange%}λ%f '
