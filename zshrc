@@ -40,6 +40,7 @@ export EDITOR=ne
 export GOPATH="$HOME/Code/go"
 export PATH="$GOPATH/bin:$PATH"
 export PYENV_VIRTUALENV_DISABLE_PROMPT=1
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk
 
 # Tmux aliases
 alias mux='tmuxinator'
@@ -50,7 +51,3 @@ alias tls='tmux ls'
 alias tkill='tmux kill-session -t'
 
 alias reflector-get-mirrors="sudo reflector --verbose -l 50 -p https --sort rate --save /etc/pacman.d/mirrorlist"
-
-# https://wiki.archlinux.org/index.php/Steam/Troubleshooting#Deleting_the_runtime_libraries
-alias fix-steam='find ~/.steam/root/ \( -name "libgcc_s.so*" -o -name "libstdc++.so*" -o -name "libxcb.so*" -o -name "libgpg-error.so*" \) -print -delete'
-alias fix-steam-again='find ~/.local/share/Steam/ \( -name "libgcc_s.so*" -o -name "libstdc++.so*" -o -name "libxcb.so*" -o -name "libgpg-error.so*" \) -print -delete'
