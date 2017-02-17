@@ -36,7 +36,7 @@ if ! zgen saved; then
     zgen save
 fi
 
-export EDITOR=ne
+export EDITOR=micro
 export GOPATH="$HOME/Code/go"
 export PATH="$GOPATH/bin:$PATH"
 export PYENV_VIRTUALENV_DISABLE_PROMPT=1
