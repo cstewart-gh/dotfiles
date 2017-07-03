@@ -21,13 +21,12 @@
 	unstage = reset HEAD --
 [diff]
 	tool = bc
+	indentHeuristics = on
 [difftool]
-	tool = bc
 	prompt = false
 [merge]
 	tool = bc
 [mergetool]
-	tool = bc
 	keeptemporaries = false
 	keepbackups = false
 	prompt = false
