@@ -41,8 +41,6 @@ export PATH="$PATH:$HOME/bin:$HOME/.npm-packages/bin:$GOPATH/bin"
 export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk
 
-# https://github.com/zyedidia/micro
-export EDITOR=micro
 alias mi=micro
 alias st3=subl3
 
