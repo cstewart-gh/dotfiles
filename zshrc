@@ -52,6 +52,4 @@ alias tnew='tmux new -s'
 alias tls='tmux ls'
 alias tkill='tmux kill-session -t'
 
-alias reflector-get-mirrors="sudo reflector --verbose -a 4 -p https --sort rate --save /etc/pacman.d/mirrorlist"
-
 source "${HOME}/.zprivate"
