@@ -1,0 +1,1 @@
+/home/chris/.dotfiles/config/mpv/scripts/stats.lua
