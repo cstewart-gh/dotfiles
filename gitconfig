@@ -1,6 +1,7 @@
 [user]
 	name = Christopher Stewart
 	email = git@c16t.uk
+	signingkey = 767E0508247ED94A
 [alias]
 	a = add
 	br = branch
