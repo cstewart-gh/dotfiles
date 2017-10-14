@@ -1,6 +1,6 @@
 [user]
 	name = Christopher Stewart
-	email = cstewart90@users.noreply.github.com
+	email = git@c16t.uk
 [alias]
 	a = add
 	br = branch
@@ -28,7 +28,7 @@
 	tool = bc
 [mergetool]
 	keeptemporaries = false
-	keepbackups = false
+	keepbackups = true
 	prompt = false
 [push]
 	default = simple
