@@ -2,18 +2,22 @@
 	name = Christopher Stewart
 	email = git@c16t.uk
 	signingkey = 767E0508247ED94A
+	# sign tags/merge https://git-scm.com/book/en/v2/Git-Tools-Signing-Your-Work
 [alias]
 	a = add
 	br = branch
 	c = commit
 	cl = clone
 	co = checkout
+	com = commit
+	cr = git init --bare
 	cp = cherry-pick
 	dc = diff --cached
 	dt = difftool
 	dump = cat-file -p
 	hist = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %Cblue<%an>%Creset' --abbrev-commit --date=relative --all
 	last = log -1 -p
+	m = merge -S
 	mt = mergetool
 	p = push
 	pl = pull
@@ -41,3 +45,7 @@
     insteadOf = "aur:"
 [url "aur@aur.archlinux.org"]
     pushInsteadOf = "aur:"
+[gpg]
+	program = gpg2
+[tag]
+	gpgsign = true

@@ -1,0 +1,6 @@
+#!/bin/bash
+# usage - mpv-acestream "acestream ID"
+sudo systemctl restart docker.service
+docker start aceproxy
+sleep 1
+mpv "http://localhost:8000/pid/$1/stream.mp4"
