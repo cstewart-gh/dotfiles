@@ -1,1 +1,1 @@
-sudo reflector -c UK -c IE -c NL -c BE -c LU -c FR -c DE --age 12 --protocol https --sort rate --save /etc/pacman.d/mirrorlist --verbose
+sudo reflector -c UK -c IE -c NL -c BE -c LU -c FR -c DE --age 24 --protocol https --sort rate --save /etc/pacman.d/mirrorlist --verbose

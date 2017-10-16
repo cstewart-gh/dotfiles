@@ -5,15 +5,24 @@
 	# sign tags/merge https://git-scm.com/book/en/v2/Git-Tools-Signing-Your-Work
 [alias]
 	a = add
-	br = branch
-	c = commit
+	b = branch
+	ba = branch -va
+	br = branch -v --remote
+	c = commit -v
+    ca = commit -va
+	cs = git commit -vS
+	cas = git commit -vaS
+	cma = git commit -vam
+	cm = git commit -v -m
 	cl = clone
 	co = checkout
-	com = commit
-	cr = git init --bare
+	create = git init --bare
+	mkrc = git init --bare
 	cp = cherry-pick
-	dc = diff --cached
+	dct = describe --tags `git rev-list --tags --max-count=1`
+	dca = diff --cached
 	dt = difftool
+	gcom = checkout master
 	dump = cat-file -p
 	hist = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %Cblue<%an>%Creset' --abbrev-commit --date=relative --all
 	last = log -1 -p
@@ -21,7 +30,10 @@
 	mt = mergetool
 	p = push
 	pl = pull
+	r = reset
 	st = status -sb
+	t = tag -S
+	tv = tag -v
 	type = cat-file -t
 	unstage = reset HEAD --
 [diff]
